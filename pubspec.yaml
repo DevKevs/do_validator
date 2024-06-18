@@ -1,6 +1,6 @@
 name: do_validator
-description: This package offers a simple and efficient way to validate Dominican Republic ID numbers. Perfect for developers who need to ensure the validity of identity documents in their applications. It checks the format and integrity of the ID number according to official rules.
-version: 1.0.0
+description: This package offers a simple and efficient way to validate Dominican Republic ID numbers.
+version: 1.0.1
 repository: https://github.com/DevKevs/do_validator
 environment:
   sdk: ^3.3.3

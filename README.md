@@ -8,23 +8,32 @@ You can install the package using:
 
 ### With Dart:
 ```sh
-dart pub do_validator 
+dart pub add do_validator 
 ```
 ### With Flutter:
 ```sh
-flutter pub do_validator 
+flutter pub get do_validator 
 ```
 
-# Example
+# Example's
 
+### offline validation
+```dart
+import 'package:do_validator/do_validator.dart';
+
+void main() {
+  const document = '12345678902';
+
+  final bool validation = documentValidator(document);
+  print(validation);
+}
+```
+### API call validation
 ```dart
 import 'package:do_validator/do_validator.dart';
 
 void main() async {
   const document = '12345678902';
-
-  final bool validation = documentValidator(document);
-  print(validation);
 
   final result = await electoralRollValidation(document);
   print(result);
